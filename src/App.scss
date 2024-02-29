@@ -1,0 +1,28 @@
+body {
+  margin: 0;
+  font-family: 'Roboto', 'Oxygen',
+    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
+    sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  background-color: red;
+}
+
+*, ::before, ::after {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  outline: none;
+  background-color: #BcBc;
+}
+button {
+  background: none;
+  border: none;
+}
+
+.test {
+
+  width: 100%;
+  height: 200vh;
+ border: 2px solid brown;
+}
