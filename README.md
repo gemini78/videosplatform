@@ -1,3 +1,3 @@
-# Netflix clone
+# VideosPlatform
 
 material ui icon
