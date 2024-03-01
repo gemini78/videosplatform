@@ -20,18 +20,6 @@ const Footer = () => {
                 <li className="footer__link"><a href="/">Lien footer</a></li>
                 <li className="footer__link"><a href="/">Lien footer</a></li>
                 <li className="footer__link"><a href="/">Lien footer</a></li>
-                <li className="footer__link"><a href="/">Lien footer</a></li>
-                <li className="footer__link"><a href="/">Lien footer</a></li>
-                <li className="footer__link"><a href="/">Lien footer</a></li>
-                <li className="footer__link"><a href="/">Lien footer</a></li>
-                <li className="footer__link"><a href="/">Lien footer</a></li>
-                <li className="footer__link"><a href="/">Lien footer</a></li>
-                <li className="footer__link"><a href="/">Lien footer</a></li>
-                <li className="footer__link"><a href="/">Lien footer</a></li>
-                <li className="footer__link"><a href="/">Lien footer</a></li>
-                <li className="footer__link"><a href="/">Lien footer</a></li>
-                <li className="footer__link"><a href="/">Lien footer</a></li>
-                <li className="footer__link"><a href="/">Lien footer</a></li>
             </ul>
             <div className="footer__copy">
                 VideosPlatform - tous droits réservés 2024
