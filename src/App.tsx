@@ -8,7 +8,6 @@ function App() {
     <div className="App">
      {/* navbar */}
      <Navbar />
-     <div className="test"></div>
      {/* banner */}
      {/* rows */}
      {/* video */}
