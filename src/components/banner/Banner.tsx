@@ -1,8 +1,8 @@
 import React, { useEffect, useState } from 'react'
 import './Banner.scss';
 import { GrPlayFill, GrCircleQuestion } from "react-icons/gr";
-import axios from 'axios';
 import requests from '../../config/Requests';
+import axios from "axios";
 
 interface IMovie  {
   name?: string;
