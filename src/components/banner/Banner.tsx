@@ -3,14 +3,8 @@ import './Banner.scss';
 import { GrPlayFill, GrCircleQuestion } from "react-icons/gr";
 import requests from '../../config/Requests';
 import axios from "axios";
+import { IMovie } from '../../models/movie';
 
-interface IMovie  {
-  name?: string;
-  title?: string;
-  original_title?: string;
-  overview: string;
-  backdrop_path: string;
-}
 const Banner = () => {
 
   const [movie, setMovie] = useState<IMovie>();
