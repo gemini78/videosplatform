@@ -28,7 +28,7 @@ const Banner = () => {
     return text?.length > n ? text.substring(0, n - 1) + "..." : "No description"
   }
 
-  console.log(movie);
+ // console.log(movie);
 
   const bannerStyle = {
     backgroundImage: `url("https://image.tmdb.org/t/p/original/${movie?.backdrop_path}")`,
