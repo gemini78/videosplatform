@@ -4,10 +4,16 @@ import { GrPlayFill, GrCircleQuestion } from "react-icons/gr";
 import requests from '../../config/Requests';
 import axios from "axios";
 import { IMovie } from '../../models/movie';
-
+import { IBannerStyle } from '../../models/bannerStyle';
+import { QuickView } from '../quickview/QuickView';
 const Banner = () => {
 
   const [movie, setMovie] = useState<IMovie>();
+  const [popup, setPopup] = useState<boolean>(false)
+
+  const handleClickPopup = () => {
+    popup ? setPopup(false): setPopup(true);
+  }
 
   useEffect(()=>{
     async function fetchData() {
@@ -22,13 +28,13 @@ const Banner = () => {
     return text?.length > n ? text.substring(0, n - 1) + "..." : "No description"
   }
 
- // console.log(movie);
-
-  const bannerStyle = {
+  const bannerStyle: IBannerStyle = {
     backgroundImage: `url("https://image.tmdb.org/t/p/original/${movie?.backdrop_path}")`,
     backgroundSize: "cover",
     backgroundPosition: "center center",
   }
+
+  console.log(popup);
 
   return (
     <header className='banner' style={bannerStyle}>
@@ -37,9 +43,10 @@ const Banner = () => {
             <p className="banner__description">{movie && truncateText(movie.overview, 100)}</p>
             <div className="banner__buttons">
                 <button className="banner__button banner__button--play"><GrPlayFill size={20}/> Lecture</button>
-                <button className="banner__button"><GrCircleQuestion size={20}/>Plus d'info</button>
+                <button className="banner__button" onClick={handleClickPopup}><GrCircleQuestion size={20}/>Plus d'info</button>
             </div>
         </div>
+      <QuickView bannerStyle={bannerStyle} handlePopup={handleClickPopup} popupStatut={popup} movie={movie} />
     </header>
   )
 }
